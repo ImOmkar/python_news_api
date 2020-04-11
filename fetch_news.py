@@ -1,6 +1,6 @@
 from newsapi import NewsApiClient
 
-newsapi = NewsApiClient(api_key="531b40e00dc142bfb2ad71704c08d40e") #this will allow us to access newsapi service. get key from https://newsapi.org/
+newsapi = NewsApiClient(api_key="your_news_api_key") #this will allow us to access newsapi service. get key from https://newsapi.org/
 
 
 #will fetch top-headlines
