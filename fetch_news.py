@@ -1,6 +1,6 @@
 from newsapi import NewsApiClient
 
-newsapi = NewsApiClient(api_key="c7eb470395e04da68d1a0002d3f4ca8c") #this will allow us to access newsapi service. get key from https://newsapi.org/
+newsapi = NewsApiClient(api_key="your_key") #this will allow us to access newsapi service. get key from https://newsapi.org/
 
 
 top_headlines = newsapi.get_top_headlines(q='bitcoin',
