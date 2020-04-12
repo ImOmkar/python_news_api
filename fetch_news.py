@@ -1,17 +1,15 @@
 from newsapi import NewsApiClient
 
-newsapi = NewsApiClient(api_key="your_news_api_key") #this will allow us to access newsapi service. get key from https://newsapi.org/
+newsapi = NewsApiClient(api_key="c7eb470395e04da68d1a0002d3f4ca8c") #this will allow us to access newsapi service. get key from https://newsapi.org/
 
-
-#will fetch top-headlines
 
 top_headlines = newsapi.get_top_headlines(q='bitcoin',
                                           sources='bbc-news,the-verge',
                                           category='business',
                                           language='en',
                                           country='us')
-#to fetch everything
 
+# /v2/everything
 all_articles = newsapi.get_everything(q='bitcoin',
                                       sources='bbc-news,the-verge',
                                       domains='bbc.co.uk,techcrunch.com',
@@ -21,13 +19,8 @@ all_articles = newsapi.get_everything(q='bitcoin',
                                       sort_by='relevancy',
                                       page=2)
 
-
-#to fetch the all news sources
-
+# /v2/sources
 sources = newsapi.get_sources()
-
-
-
 
 
 
